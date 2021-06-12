@@ -21,7 +21,8 @@ public class PlayerBase : MonoBehaviour
     // Class constructor
     public PlayerBase(bool pType, int army, int civilians, int id, int money, int nHeroes, int prod, string kName)
     {
-
+        this.pType = pType;
+        this.army = 
     }
 
     // Start is called before the first frame update
