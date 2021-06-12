@@ -121,6 +121,64 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &103521614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 103521616}
+  - component: {fileID: 103521615}
+  m_Layer: 0
+  m_Name: Player2CPU1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &103521615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103521614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5b11c56bdd86b54787ef6e515a49af4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arbiter: {fileID: 1346806457}
+  choosing: 0
+  pType: 0
+  actions: 0
+  army: 10
+  baseHp: 1000
+  civilians: 600
+  currentHp: 0
+  id: 1
+  maxHp: 0
+  money: 400
+  nHeroes: 0
+  prod: 0
+  kName: 
+  pName: 
+--- !u!4 &103521616
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103521614}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.31122786, y: 0.6805124, z: 43.592842}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &245237518
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,6 +704,64 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &1155620087
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1155620089}
+  - component: {fileID: 1155620088}
+  m_Layer: 0
+  m_Name: Player4CPU3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1155620088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155620087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5b11c56bdd86b54787ef6e515a49af4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arbiter: {fileID: 1346806457}
+  choosing: 0
+  pType: 0
+  actions: 0
+  army: 50
+  baseHp: 1000
+  civilians: 300
+  currentHp: 0
+  id: 3
+  maxHp: 0
+  money: 400
+  nHeroes: 2
+  prod: 0
+  kName: 
+  pName: 
+--- !u!4 &1155620089
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155620087}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.31122786, y: 0.6805124, z: 43.592842}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1346806457
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,10 +791,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a22cce39eb672f47919850c4cafb9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pj1: {fileID: 0}
-  pj2: {fileID: 0}
-  pj3: {fileID: 0}
-  pj4: {fileID: 0}
+  pj1: {fileID: 1819220702}
+  pj2: {fileID: 103521614}
+  pj3: {fileID: 2113893703}
+  pj4: {fileID: 1155620087}
+  playerName: Default Player Name
+  pKingdomName: Default Player Kingdom Name
 --- !u!4 &1346806459
 Transform:
   m_ObjectHideFlags: 0
@@ -796,6 +914,64 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1819220702
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1819220703}
+  - component: {fileID: 1819220704}
+  m_Layer: 0
+  m_Name: Player1Human
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1819220703
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819220702}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.31122786, y: 0.6805124, z: 43.592842}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1819220704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819220702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5b11c56bdd86b54787ef6e515a49af4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arbiter: {fileID: 1346806457}
+  choosing: 0
+  pType: 0
+  actions: 0
+  army: 30
+  baseHp: 1000
+  civilians: 300
+  currentHp: 0
+  id: 0
+  maxHp: 0
+  money: 500
+  nHeroes: 0
+  prod: 0
+  kName: 
+  pName: 
 --- !u!1 &1924262432
 GameObject:
   m_ObjectHideFlags: 0
@@ -852,7 +1028,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f744ac0edcf2911489eab98b72ff80c0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fb1f339ba17ac5c4b85e92e5a45368ba, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -870,3 +1046,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1924262432}
   m_CullTransparentMesh: 0
+--- !u!1 &2113893703
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2113893705}
+  - component: {fileID: 2113893704}
+  m_Layer: 0
+  m_Name: Player3CPU2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2113893704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113893703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5b11c56bdd86b54787ef6e515a49af4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arbiter: {fileID: 1346806457}
+  choosing: 0
+  pType: 0
+  actions: 0
+  army: 30
+  baseHp: 1000
+  civilians: 400
+  currentHp: 0
+  id: 2
+  maxHp: 0
+  money: 500
+  nHeroes: 1
+  prod: 0
+  kName: 
+  pName: 
+--- !u!4 &2113893705
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113893703}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.31122786, y: 0.6805124, z: 43.592842}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
