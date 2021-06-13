@@ -6,15 +6,16 @@ using UnityEngine;
 public class Arbiter : MonoBehaviour
 {
     // Players
+    public bool[] activePlayers;
     public GameObject pj1;
     public GameObject pj2;
     public GameObject pj3;
     public GameObject pj4;
 
-    private PlayerBase p1Script;
-    private PlayerBase p2Script;
-    private PlayerBase p3Script;
-    private PlayerBase p4Script;
+    public PlayerBase p1Script;
+    public PlayerBase p2Script;
+    public PlayerBase p3Script;
+    public PlayerBase p4Script;
 
     // Reference Matrix
     public float[,] repMatrix = new float[4, 4]
@@ -54,6 +55,7 @@ public class Arbiter : MonoBehaviour
         p4kName = pNames[3];
         player4Name = kNames[3];
 
+        activePlayers = new bool[] { true, true, true, true };
         initializeClasses(p1Script, p2Script, p3Script, p4Script);
 
     }
@@ -61,10 +63,9 @@ public class Arbiter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (p1Script.actions == 0 || p1Script.choosing == false)
+        if (activePlayers[0] == false)
         {
-            p2Script.actions = 3;
-            p2Script.choosing = true;
+            //Game Over man
         }
     }
 
@@ -110,6 +111,7 @@ public class Arbiter : MonoBehaviour
         p4Script.pName = player4Name;
         p4Script.kName = p4kName;
         p4Script.initializeHP();
+
     }
 
     void changePlayer()
