@@ -7,9 +7,10 @@ public class HeroBase : MonoBehaviour
     // Public Variables ==============================================================
     //================================================================================
 
-    public PlayerBase pj2 = GameObject.Find("Player2CPU1").GetComponent<PlayerBase>();
-    public PlayerBase pj3 = GameObject.Find("Player3CPU2").GetComponent<PlayerBase>();
-    public PlayerBase pj4 = GameObject.Find("Player4CPU3").GetComponent<PlayerBase>();
+    public PlayerBase pj2;
+    public PlayerBase pj3;
+    public PlayerBase pj4;
+
 
     //================================================================================
     // Private Variables =============================================================
@@ -21,7 +22,9 @@ public class HeroBase : MonoBehaviour
     //================================================================================
     void Start()
     {
-
+        pj2 = GameObject.Find("Player2CPU1").GetComponent<PlayerBase>();
+        pj3 = GameObject.Find("Player3CPU2").GetComponent<PlayerBase>();
+        pj4 = GameObject.Find("Player4CPU3").GetComponent<PlayerBase>();
 
     }
 
